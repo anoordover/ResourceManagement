@@ -5,16 +5,38 @@
     <e p="$APPLICATION_CONFIG_DIR$/extensions" t="IncludeRecursive" />
     <e p="$USER_HOME$/.Rider2019.3/system/extResources" t="IncludeRecursive" />
     <e p="$USER_HOME$/.Rider2019.3/system/resharper-host/local/Transient/ReSharperHost/v193/SolutionCaches/_ResourceManagement.-311902530.00" t="ExcludeRecursive" />
+    <e p="$USER_HOME$/.nuget/packages/microsoft.net.test.sdk/16.5.0/build/netcoreapp2.1" t="Include">
+      <e p="Microsoft.NET.Test.Sdk.Program.cs" t="Include" />
+    </e>
+    <e p="$USER_HOME$/.nuget/packages/xunit.runner.visualstudio/2.4.1/build/netcoreapp1.0/xunit.runner.reporters.netcoreapp10.dll" t="Include" />
+    <e p="$USER_HOME$/.nuget/packages/xunit.runner.visualstudio/2.4.1/build/netcoreapp1.0/xunit.runner.utility.netcoreapp10.dll" t="Include" />
+    <e p="$USER_HOME$/.nuget/packages/xunit.runner.visualstudio/2.4.1/build/netcoreapp1.0/xunit.runner.visualstudio.dotnetcore.testadapter.dll" t="Include" />
     <e p="$PROJECT_DIR$" t="IncludeFlat">
       <e p="Noordover.ResourceManagement.Domain" t="IncludeRecursive">
         <e p="Noordover.ResourceManagement.Domain.csproj" t="IncludeRecursive" />
         <e p="Person.cs" t="Include" />
         <e p="PersonType.cs" t="Include" />
+        <e p="RecurringSchedule.cs" t="Include" />
+        <e p="Schedule.cs" t="Include" />
+        <e p="ScheduleItem.cs" t="Include" />
+        <e p="ScheduleStatus.cs" t="Include" />
         <e p="bin" t="ExcludeRecursive" />
         <e p="obj" t="ExcludeRecursive">
           <e p="Debug" t="Include">
             <e p="netstandard2.0" t="Include">
               <e p="Noordover.ResourceManagement.Domain.AssemblyInfo.cs" t="Include" />
+            </e>
+          </e>
+        </e>
+      </e>
+      <e p="Noordover.ResourceManagement.Scheduling" t="IncludeRecursive">
+        <e p="Noordover.ResourceManagement.Scheduling.csproj" t="IncludeRecursive" />
+        <e p="ScheduleManager.cs" t="Include" />
+        <e p="bin" t="ExcludeRecursive" />
+        <e p="obj" t="ExcludeRecursive">
+          <e p="Debug" t="Include">
+            <e p="netstandard2.0" t="Include">
+              <e p="Noordover.ResourceManagement.Scheduling.AssemblyInfo.cs" t="Include" />
             </e>
           </e>
         </e>
@@ -83,6 +105,21 @@
         </e>
       </e>
       <e p="ResourceManagement.sln" t="IncludeFlat" />
+      <e p="Test.Scheduling" t="IncludeRecursive">
+        <e p="Class1.cs" t="Include" />
+        <e p="GivenSimpleSchedule" t="Include">
+          <e p="WhenExpandingSchedule.cs" t="Include" />
+        </e>
+        <e p="Test.Scheduling.csproj" t="IncludeRecursive" />
+        <e p="bin" t="ExcludeRecursive" />
+        <e p="obj" t="ExcludeRecursive">
+          <e p="Debug" t="Include">
+            <e p="netcoreapp3.0" t="Include">
+              <e p="Test.Scheduling.AssemblyInfo.cs" t="Include" />
+            </e>
+          </e>
+        </e>
+      </e>
       <e p="packages" t="ExcludeRecursive" />
     </e>
   </component>

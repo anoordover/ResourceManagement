@@ -1,0 +1,17 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <ItemGroup>
+    <ProjectReference Include="..\Noordover.ResourceManagement.Domain\Noordover.ResourceManagement.Domain.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="CronEspresso" Version="3.0.0" />
+    <PackageReference Include="CronExpressionDescriptor" Version="2.15.0" />
+    <PackageReference Include="ncrontab" Version="3.3.1" />
+  </ItemGroup>
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+  </PropertyGroup>
+
+</Project>

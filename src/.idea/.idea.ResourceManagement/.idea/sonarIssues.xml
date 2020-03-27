@@ -18,6 +18,46 @@
             <set />
           </value>
         </entry>
+        <entry key="$PROJECT_DIR$/Noordover.ResourceManagement.Domain/PersonType.cs">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/Noordover.ResourceManagement.Domain/RecurringSchedule.cs">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/Noordover.ResourceManagement.Domain/Schedule.cs">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/Noordover.ResourceManagement.Domain/ScheduleItem.cs">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/Noordover.ResourceManagement.Scheduling/Class1.cs">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/Noordover.ResourceManagement.Scheduling/ScheduleManager.cs">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/Test.Scheduling/GivenSimpleSchedule/WhenExpandingSchedule.cs">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/Test.Scheduling/Test.Scheduling.csproj">
+          <value>
+            <set />
+          </value>
+        </entry>
       </map>
     </option>
   </component>

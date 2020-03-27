@@ -2,11 +2,10 @@ using System;
 
 namespace Noordover.ResourceManagement.Domain
 {
-    [Flags]
-    public enum PersonType
+    
+    public class PersonType
     {
-        Staff = 1,
-        Trainers = 2,
-        Volunteers = 4
+        public int Id { get; set; }
+        public string Name { get; set; }
     }
 }
