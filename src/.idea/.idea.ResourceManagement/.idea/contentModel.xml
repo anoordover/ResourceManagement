@@ -110,6 +110,11 @@
         <e p="GivenSimpleSchedule" t="Include">
           <e p="WhenExpandingSchedule.cs" t="Include" />
         </e>
+        <e p="ScheduleManager" t="Include">
+          <e p="GivenSimpleRecurringSchedule" t="Include">
+            <e p="WhenExpandingSchedule.cs" t="Include" />
+          </e>
+        </e>
         <e p="Test.Scheduling.csproj" t="IncludeRecursive" />
         <e p="bin" t="ExcludeRecursive" />
         <e p="obj" t="ExcludeRecursive">

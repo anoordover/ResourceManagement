@@ -38,6 +38,11 @@
             <set />
           </value>
         </entry>
+        <entry key="$PROJECT_DIR$/Noordover.ResourceManagement.Domain/ScheduleStatus.cs">
+          <value>
+            <set />
+          </value>
+        </entry>
         <entry key="$PROJECT_DIR$/Noordover.ResourceManagement.Scheduling/Class1.cs">
           <value>
             <set />
@@ -49,6 +54,11 @@
           </value>
         </entry>
         <entry key="$PROJECT_DIR$/Test.Scheduling/GivenSimpleSchedule/WhenExpandingSchedule.cs">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/Test.Scheduling/ScheduleManager/GivenSimpleRecurringSchedule/WhenExpandingSchedule.cs">
           <value>
             <set />
           </value>

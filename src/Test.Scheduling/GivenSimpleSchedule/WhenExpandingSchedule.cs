@@ -2,7 +2,6 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using Noordover.ResourceManagement.Domain;
-using Noordover.ResourceManagement.Scheduling;
 using Xunit;
 
 namespace Test.Scheduling.GivenSimpleSchedule
@@ -34,8 +33,7 @@ namespace Test.Scheduling.GivenSimpleSchedule
 
             }
         };
-
-
+        
         [Fact]
         public void ShouldCreateTheScheduleItemsSpecified()
         {
@@ -43,7 +41,7 @@ namespace Test.Scheduling.GivenSimpleSchedule
             // arrange
 
             // act
-            var sut = new ScheduleManager();
+            var sut = new Noordover.ResourceManagement.Scheduling.ScheduleManager();
             var results = sut.ExpandSchedule(_mySimpleSchedule, new DateTime(2019, 1, 1), new DateTime(2019, 12, 31));
 
             // assert
@@ -59,7 +57,7 @@ namespace Test.Scheduling.GivenSimpleSchedule
             // arrange
 
             // act
-            var sut = new ScheduleManager();
+            var sut = new Noordover.ResourceManagement.Scheduling.ScheduleManager();
             var results = sut.ExpandSchedule(_myMultipleItemSchedule, new DateTime(2019, 1, 1), new DateTime(2019, 12, 31));
 
             // assert
@@ -77,7 +75,7 @@ namespace Test.Scheduling.GivenSimpleSchedule
             // arrange
 
             // act
-            var sut = new ScheduleManager();
+            var sut = new Noordover.ResourceManagement.Scheduling.ScheduleManager();
             var results = sut.ExpandSchedule(_myMultipleItemSchedule, new DateTime(2019, 1, 1), new DateTime(2019, 5, 18));
 
             // assert
