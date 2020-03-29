@@ -15,9 +15,11 @@
       <e p="Noordover.ResourceManagement.Domain" t="IncludeRecursive">
         <e p="Noordover.ResourceManagement.Domain.csproj" t="IncludeRecursive" />
         <e p="Person.cs" t="Include" />
+        <e p="PersonPersonType.cs" t="Include" />
         <e p="PersonType.cs" t="Include" />
         <e p="RecurringSchedule.cs" t="Include" />
         <e p="Schedule.cs" t="Include" />
+        <e p="ScheduleException.cs" t="Include" />
         <e p="ScheduleItem.cs" t="Include" />
         <e p="ScheduleStatus.cs" t="Include" />
         <e p="bin" t="ExcludeRecursive" />
@@ -43,15 +45,19 @@
       </e>
       <e p="Noordover.ResourceManagement.Web" t="IncludeRecursive">
         <e p="App.razor" t="Include" />
-        <e p="Data" t="Include">
-          <e p="WeatherForecast.cs" t="Include" />
-          <e p="WeatherForecastService.cs" t="Include" />
+        <e p="Data" t="Include" />
+        <e p="Migrations" t="Include">
+          <e p="20200329103549_InitialCreate.Designer.cs" t="Include" />
+          <e p="20200329103549_InitialCreate.cs" t="Include" />
+          <e p="MyDbContextModelSnapshot.cs" t="Include" />
+        </e>
+        <e p="Models" t="Include">
+          <e p="MyDbContext.cs" t="Include" />
         </e>
         <e p="Noordover.ResourceManagement.Web.csproj" t="IncludeRecursive" />
         <e p="Pages" t="Include">
           <e p="Counter.razor" t="Include" />
           <e p="Error.razor" t="Include" />
-          <e p="FetchData.razor" t="Include" />
           <e p="Index.razor" t="Include" />
           <e p="_Host.cshtml" t="Include" />
         </e>

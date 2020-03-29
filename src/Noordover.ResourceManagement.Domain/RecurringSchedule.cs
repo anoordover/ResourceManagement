@@ -13,6 +13,5 @@ namespace Noordover.ResourceManagement.Domain
         public TimeSpan Duration { get; set; }
         public DateTime MinStartDateTime { get; set; }
         public DateTime MaxEndDateTime { get; set; }
-        public IList<(DateTime start, DateTime end)> ScheduleExceptions { get; set; }
     }
 }

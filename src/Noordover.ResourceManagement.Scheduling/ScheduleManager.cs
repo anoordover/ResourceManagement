@@ -14,13 +14,12 @@ namespace Noordover.ResourceManagement.Scheduling
         public IEnumerable<TimeSlot> ExpandSchedule(Schedule schedule, DateTime startTime, DateTime endTime, ILogger logger = null) {
 
             var outSchedule = new List<TimeSlot>();
-						logger = logger ?? NullLogger.Instance;
+	        logger = logger ?? NullLogger.Instance;
+	        if (schedule.ScheduleItems != null) 
+		        outSchedule.AddRange(ExpandScheduleItems(schedule.ScheduleItems, startTime, endTime));
 
-						if (schedule.ScheduleItems != null)
-            outSchedule.AddRange(ExpandScheduleItems(schedule.ScheduleItems, startTime, endTime));
-
-						if (schedule.RecurringSchedules != null) 
-						outSchedule.AddRange(ExpandRecurringSchedules(schedule.RecurringSchedules, startTime, endTime, logger));
+	        if (schedule.RecurringSchedules != null) 
+		        outSchedule.AddRange(ExpandRecurringSchedules(schedule.RecurringSchedules, startTime, endTime, logger));
 
             return outSchedule;
 
@@ -59,19 +58,19 @@ namespace Noordover.ResourceManagement.Scheduling
 			}
 
 			// Scenario 4
-			if (ts1.StartDateTime <= ts2.StartDateTime && ts1.EndDateTime >= ts2.EndDateTime) {
+			if (ts1.StartDateTime < ts2.StartDateTime && ts1.EndDateTime > ts2.EndDateTime) {
 				logger.LogTrace("Time 1 is contained entirely within Time 2");
 				return (ts2.StartDateTime, ts2.EndDateTime);
 			}
 
 			// Scenario 5
-			if (ts1.StartDateTime >= ts2.StartDateTime && ts1.EndDateTime >= ts2.EndDateTime) {
+			if (ts1.StartDateTime >= ts2.StartDateTime && ts1.EndDateTime > ts2.EndDateTime) {
 				logger.LogTrace("Time 1 starts after Time 2 and overlaps");
 				return (ts1.StartDateTime, ts2.EndDateTime);
 			}
 
 			// Scenario 6
-			if (ts1.StartDateTime <= ts2.StartDateTime && ts1.EndDateTime <= ts2.EndDateTime) {
+			if (ts1.StartDateTime < ts2.StartDateTime && ts1.EndDateTime <= ts2.EndDateTime) {
 				logger.LogTrace("Time 2 starts after Time 1 and overlaps");
 				return (ts2.StartDateTime, ts1.EndDateTime);
 			}

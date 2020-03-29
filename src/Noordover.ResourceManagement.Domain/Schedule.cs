@@ -8,7 +8,7 @@ namespace Noordover.ResourceManagement.Domain
         public int Id { get; set; }
         public IList<ScheduleItem> ScheduleItems { get; set; }
         public IList<RecurringSchedule> RecurringSchedules { get; set; }
-        public IList<(DateTime start, DateTime end)> ScheduleExceptions { get; set; }
+        public IList<ScheduleException> ScheduleExceptions { get; set; }
     }
 
     public class TimeSlot
